@@ -1,0 +1,137 @@
+/*
+-Green: hsl(75, 94%, 57%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 20%)
+- Dark Grey: hsl(0, 0%, 12%)
+- Off Black: hsl(0, 0%, 8%)*/
+body {
+	background: hsl(0, 0%, 8%);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter SemiBold';
+}
+
+#container {
+	display: grid;
+	place-items: center;
+	position: relative;
+	background: hsl(0, 0%, 12%);
+	color: white;
+	border-radius: 15px;
+	max-width: clamp(300px, 450px, 750px);
+	margin: 20px auto;
+	padding: 20px;
+	text-align: center;
+}
+
+
+.me {
+	width: 30%;
+	height: 18vh;
+	border-radius: 50%;
+	display: block; 
+	margin: 0 auto 20px;
+}
+#name{
+	text-align: center;
+}
+
+nav ul li{
+	list-style-type: none;
+}
+nav{
+	display: inline-block;
+	line-height: 4em;
+}
+
+a{
+	text-decoration: none;
+	color: #ffffff;
+}
+a:hover{
+	cursor: pointer;
+	color: black;
+}
+
+.location{
+	color: hsl(75, 94%, 57%);
+}
+
+a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: hsl(0, 0%, 20%);
+	border-radius: 10px;
+	width: 25em;
+	height: 3em;
+	margin: 20px;
+	text-align: center;
+	transition: ease-in-out 400
+}
+
+a:hover{
+	background: hsl(75, 94%, 57%, 1.0);
+	cursor: black;
+}
+
+#occupation{
+	font-family: 'Inter Regular';
+}
+
+@media (max-width: 768px) {
+  #container {
+    max-width: 90%;
+  }
+  
+  .me {
+    width: 80px;
+    height: 80px;
+  }
+
+a {
+    align-items: center; /* Center vertically */
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    width: 350px;
+    margin: 10px auto;  
+}
+
+			
+}	
+  
+  .Links{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	text-align: center;
+	top: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+  }
+
+}
+#container {
+  display: flex;
+  flex-direction: column; /* Stack the child elements vertically */
+  justify-content: center; /* Center the child elements horizontally */
+  align-items: center; /* Center the child elements vertically */
+  position: relative;
+  background: hsl(0, 0%, 12%);
+  color: white;
+  border-radius: 15px;
+  max-width: clamp(300px, 450px, 750px);
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Add this to center the text */
+#name, .location {
+  text-align: center;
+}
